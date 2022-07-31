@@ -20,7 +20,7 @@ def test_sets_revenue_earned():
 def test_profit():
     campaign = Campaign("800")
     campaign.set_revenue(1000)
-    campaign.profit()
+    assert campaign.profit() == 200
 
 def test_average_revenue_per_customer():
     campaign = Campaign(800)
